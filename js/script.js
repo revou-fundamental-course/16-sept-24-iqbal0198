@@ -1,4 +1,4 @@
-// Scroll to sections when navbar items are clicked
+// pas navbar di tombol Message Us dipencet bakal scroll kebawah
 document.querySelector('nav ul').addEventListener('click', function(event) {
     if (event.target.textContent === 'Message Us') {
         document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
@@ -7,14 +7,14 @@ document.querySelector('nav ul').addEventListener('click', function(event) {
     }
 });
 
-// Filling in the user's name on the welcome text
+// Input username sesuai yg ditulis saat masuk web/ reload index page
 document.addEventListener('DOMContentLoaded', function() {
     const userName = prompt('What is your name?');
     const welcomeText = document.getElementById('welcome-text');
-    welcomeText.textContent = `Hi ${userName}, Welcome to Website`;
+    welcomeText.textContent = `Hi ${userName}, Welcome to My Personal Page`;
 });
 
-// Form validation and display message inside textarea
+//juga maaf ya variabelnya dipakein bhs eng karna kalo make indo kepanjangan XD.
 const form = document.getElementById('messageForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
@@ -24,13 +24,14 @@ form.addEventListener('submit', function(event) {
     const gender = document.getElementById('gender').value;
     const message = document.getElementById('message').value;
 
-    // Form validation
+    // Form validasi
     if (!name || !dob || !gender || !message) {
         alert('All fields are required!');
         return;
     }
 
-    // Displaying the form data inside textarea
+    // output saat di klik submit, pesan akan masuk di text area bawah xixi
+    
     const formOutput = document.getElementById('formOutput');
     formOutput.value = `
         Name: ${name}
