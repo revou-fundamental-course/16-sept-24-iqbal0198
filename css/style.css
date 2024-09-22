@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../images/background.jpg');
+    background-size: 1366px 578px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Spasi antar tombol di mobile */
+    }
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.profile-banner {
+    text-align: center;
+    padding: 50px;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+}
+
+    .headquarters {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .locations {
+        display: flex;
+        justify-content: center;
+    }
+
+    .location {
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.contact-form {
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#formOutput {
+    margin-top: 20px;
+}
+
+
+#formOutput {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    text-align: left; /* Pastikan text dalam textarea juga rata kiri */
+}
+
+.contact-form label[for="formOutput"] {
+    text-align: left; /* Biar label Your Message rata kiri */
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
