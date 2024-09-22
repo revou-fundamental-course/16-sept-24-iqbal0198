@@ -159,4 +159,61 @@ footer a:hover {
     margin-left: 5px;
 }
 
+.profile-section {
+    background-image: url('img/profile-bg.jpg'); /* Background image for profile page */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid #333; /* Border hitam tebal */
+    position: relative; /* Dibutuhkan untuk pseudo-element */
+    overflow: hidden;
+}
+
+/* Tambahkan pseudo-element untuk border animasi */
+.profile-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f39c12; /* Border animasi oranye */
+    transform: scale(1.05);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.bio p {
+    margin: 5px 0;
+    font-size: 18px;
+}
