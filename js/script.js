@@ -40,6 +40,16 @@ form.addEventListener('submit', function(event) {
         Message: ${message}
     `;
 
-   
+    document.getElementById('moreInfoBtn').addEventListener('click', function() {
+        const moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display === 'none') {
+            moreInfo.style.display = 'block';
+            this.textContent = 'Sembunyikan Info';
+        } else {
+            moreInfo.style.display = 'none';
+            this.textContent = 'Lebih Banyak Info';
+        }
+    });
+    
     
 });

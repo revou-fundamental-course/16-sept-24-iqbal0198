@@ -1,89 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio Work</title>
+    <title>My Portfolio Work</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <hr>
     <header>
         <nav>
             <ul>
                 <li><img src="test.png" alt="Profile Icon" class="profile-icon"></li>
-                <button><li><a href="index.html">Home</a></li></button>
-                <button><li><a href="profil.html">Profile</a></li></button>
-                <!-- <button><a href="#">Portofolio</a></li></button> -->
-                <button><li><a href="#">Message Us</a></li></button>
-                <button><li><a href="wallpaper.html">My Photo</a></li></button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profile</a></li>
+                <li><a href="#">Message Us</a></li>
+                <li><a href="wallpaper.html">My Photo</a></li>
             </ul>
         </nav>
-        <hr>
         <div class="welcome-message">
             <h1 id="welcome-text">Hi, Welcome to My Personal Page</h1>
-            <h3 style="display: center;"> Lets be Friends</h3>
-            <h2 style="display: center;">  ≽^•⩊•^≼</h2>
+            <h3>Let's be Friends</h3>
+            <h2>≽^•⩊•^≼</h2>
         </div>
     </header>
-<hr>
+    <hr>
+    
     <section class="profile-banner">
         <img src="assets/gojoogif.gif" alt="Company Banner" class="background">
-        <h2>Tentang gweh</h2>
-        <p>Iqbal ganteng, iqbal anak baik, iqbal friendly, iqbal cool, iqbal mirip gojo(adeknya gw wak xixi)</p>
+        <h2>Tentang Saya</h2>
+        <p>Iqbal ganteng, anak baik, friendly, cool, mirip Gojo (adeknya gw wak xixi)</p>
         <h3>...</h3>
         <p>Sigma dlu gess</p>
     </section>
+
     <section class="headquarters">
-        <h2>My dream is To go To City of The Country :</h2>
+        <h2>My dream is to go to:</h2>
         <div class="locations">
             <div class="location">Tokyo, Japan</div>
-            <div class="location">New york City, USA</div>
-            <div class="location">Bejing, China</div>
+            <div class="location">New York City, USA</div>
+            <div class="location">Beijing, China</div>
         </div>
     </section>
- 
+
+    <hr>
     
+    <section class="contact-form">
+        <h2>Message Us</h2>
+        <form id="messageForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan Nama" required>
+            
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="Male">Laki-laki</option>
+                <option value="Female">Perempuan</option>
+            </select>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" placeholder="Masukkan Pesan" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
 
-<hr>
-<section class="contact-form">
-    <h2>Message Us</h2>
-    <form id="messageForm">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" placeholder="Masukan Nama" required>
-        <label for="dob">Tanggal Lahir:</label>
-        <input type="date" id="dob" name="dob"  required>
-        <label for="gender">Jenis Kelamin:</label>
-
-        <!-- maaf kak, untuk ini saya makenya malah option, kalo saya make radio keliatanya 
-        jadi jelek hehe :p -->
-        <select id="gender" name="gender" required>
-            <option value="">Pilih Jenis Kelamin</option>
-            <option value="Male">Laki Laki</option>
-            <option value="Female">Perempuan</option>
-        </select>
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" placeholder="Masukan Pesan" required></textarea>
-        <button type="submit">Submit</button><br>
-       <hr>
-    </form>
-
-    <label for="formOutput"> pesan:</label><br>
-    <textarea id="formOutput" placeholder="Pesan Akan Muncul Disini Jika Di Masukan Input form nya" readonly></textarea>
-</section>
-
+        <label for="formOutput">Pesan:</label>
+        <textarea id="formOutput" placeholder="Pesan akan muncul di sini" readonly></textarea>
     </section>
+
+    <footer>
+        <p>Made by <strong>Iqbal</strong> with <span style="color: red;">lopp:v</span></p>
+        <a href="https://www.instagram.com/iqbll.xz_?igsh=YzljYTk1ODg3Zg==" target="_blank">
+            <img src="assets/ikonig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://open.spotify.com/user/31ckz7vg4nitoxxvmucgbxh4xjia?si=4KJE6QzjSXWNOLQXYkVGpQ" target="_blank">
+            <img src="assets/ikonsp.png" alt="Spotify" class="social-icon">
+        </a>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-<hr>
-<footer>
-    <p>Made by <strong>Iqbal</strong> with <span style="color: red;">lopp:v</span></p>
-    <a href="https://www.instagram.com/iqbll.xz_?igsh=YzljYTk1ODg3Zg==" target="_blank">
-        <img src="assets/ikonig.png" alt="Instagram" class="social-icon">
-    
-    <a href="https://open.spotify.com/user/31ckz7vg4nitoxxvmucgbxh4xjia?si=4KJE6QzjSXWNOLQXYkVGpQ" target="_blank">
-        <img src="assets/ikonsp.png" alt="spotify" class="social-icon">
-    </a>
-</footer>

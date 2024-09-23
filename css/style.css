@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-size: 1366px 578px;
+    background-image: url('https://img.pikbest.com/ai/illus_our/20230427/5c4f5728e5e6dc9781b7334271216bb7.jpg!w700wp'); /* Ganti dengan URL gambar background yang kamu inginkan */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* reponsive web di hp sama dekstop */
+/* Responsive web di hp sama desktop */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -17,14 +18,15 @@ body {
 
     nav ul li {
         margin-left: 0;
-        margin-bottom: 10px; /* Spasi buat reponsive di hp*/
+        margin-bottom: 10px; /* Spasi buat responsive di hp */
     }
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9); /* Transparan untuk efek background */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -47,6 +49,9 @@ nav ul li {
 .profile-banner {
     text-align: center;
     padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Tambahkan latar belakang putih transparan */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .background {
@@ -54,68 +59,77 @@ nav ul li {
     height: auto;
 }
 
-    .headquarters {
-        text-align: center;
-        padding: 50px;
-    }
-
-    .locations {
-        display: flex;
-        justify-content: center;
-    }
-
-    .location {
-        margin: 0 20px;
-        padding: 20px;
-        background-color: #f4f4f4;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-.contact-form {
+.headquarters {
     text-align: center;
     padding: 50px;
 }
 
-form {
-    display: inline-block;
-    text-align: left;
+.locations {
+    display: flex;
+    justify-content: center;
 }
 
-form label {
-    display: block;
-    margin-top: 10px;
+.location {
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #007BFF; /* Ganti dengan warna border yang kamu suka */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.contact-form {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang yang lembut */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    max-width: 400px; /* Batas lebar form */
+    margin: 0 auto; /* Centering */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Supaya elemen tampil vertikal */
+    gap: 15px; /* Jarak antar elemen */
 }
 
 form input, form textarea, form select {
-    width: 100%;
+    width: 100%; /* Supaya mengisi lebar form */
     padding: 10px;
-    margin-top: 5px;
+    border: 2px solid #007BFF; /* Border yang lebih menarik */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: border-color 0.3s; /* Efek transisi saat hover */
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #0056b3; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
 }
 
 form button {
-    margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #007BFF; /* Warna tombol */
     color: white;
     border: none;
+    border-radius: 5px; /* Sudut melengkung tombol */
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Warna saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
 }
+
 
 #formOutput {
     margin-top: 20px;
-}
-
-
-#formOutput {
     width: 100%;
     height: 150px;
     margin-top: 10px;
@@ -130,12 +144,11 @@ form button:hover {
     margin-top: 10px;
 }
 
-
-/* ini css style utk bagian footer*/
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Transparan untuk efek */
     color: #fff;
     font-size: 14px;
     margin-top: 50px;
@@ -158,7 +171,7 @@ footer a:hover {
     margin-left: 5px;
 }
 
-/* ini css style utk bagian profile.html */
+/* Profile Section */
 .profile-section {
     background-image: url('img/profile-bg.jpg'); /* Background gambar profil yang aku buat */
     background-size: cover;
@@ -170,7 +183,7 @@ footer a:hover {
     align-items: center;
 }
 
-/* ini css style utk bagian profile.html */
+/* Profile Container */
 .profile-container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -180,12 +193,9 @@ footer a:hover {
     max-width: 600px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border: 3px solid #333; /* Border item */
-    
 }
 
-
-/* ini css style utk bagian profile.html */
-
+/* Profile Info */
 .profile-info {
     display: flex;
     align-items: center;
@@ -193,18 +203,19 @@ footer a:hover {
     gap: 20px;
     margin-top: 20px;
 }
-/* ini css style utk bagian profile.html */
+
 .profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
-/* ini css style utk bagian profile.html */
+
 .bio p {
     margin: 5px 0;
     font-size: 18px;
 }
+
 /* Gallery Section */
 .gallery-section {
     padding: 50px;
@@ -232,12 +243,13 @@ footer a:hover {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* Efek zoom \ */
+    transform: scale(1.05); /* Efek zoom */
 }
 
-/* responsive web untuk di bagian my */
+/* Responsive web untuk di bagian my */
 @media (max-width: 768px) {
     .gallery-container {
         grid-template-columns: 1fr;
     }
 }
+
