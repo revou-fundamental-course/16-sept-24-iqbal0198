@@ -19,7 +19,7 @@ form.addEventListener('submit', function(event) {
 
     // Form validasi
     if (!name || !dob || !gender || !message) {
-        alert('All fields are required!');
+        alert('Pesan Tidak Boleh Kosong');
         return;
     }
 
@@ -46,8 +46,9 @@ form.addEventListener('submit', function(event) {
     
     // Form validasi
     if (!name || !dob || !gender || !message) {
-        alert('All fields are required!');
+        alert('Pesan Tidak Boleh Kosong');
         return;
     }
-
+   
+    
 });
