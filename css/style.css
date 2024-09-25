@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 /* Responsive web di hp sama desktop */
@@ -371,6 +371,7 @@ footer a:hover {
 
 .welcome-message h1, .welcome-message h3 {
     font-size: 5vw; /* Ukuran teks mengikuti lebar layar */
+    margin-top: 100px;
 }
 
 .location {
