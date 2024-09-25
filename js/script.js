@@ -1,11 +1,4 @@
-// pas navbar di tombol Message Us dipencet bakal scroll kebawah
-document.querySelector('nav ul').addEventListener('click', function(event) {
-    if (event.target.textContent === 'Message Us') {
-        document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
-    } else if (event.target.textContent === 'Home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-});
+
 
 // Input username sesuai yg ditulis saat masuk web/ reload index page
 document.addEventListener('DOMContentLoaded', function() {
@@ -51,5 +44,10 @@ form.addEventListener('submit', function(event) {
         }
     });
     
-    
+    // Form validasi
+    if (!name || !dob || !gender || !message) {
+        alert('All fields are required!');
+        return;
+    }
+
 });
